@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy Tính ĐƠn Giản
+	</title>
+</head>
+<body>
+
+	<input id="Result" size="28" maxlength="28" type="text"/>
+	<input id="Resultt" size="28" maxlength="28" type="text"/><br>
+	<button id="Addition" onclick="Addition();">Addition (+)</button>
+	<button id="Subtraction" onclick="Subtraction();">Subtraction (-)</button>
+	<button id="Multiplication" onclick="Multiplication();">Multiplication (*)</button>
+	<button id="DivisiOn" onclick="DivisiOn();">DivisiOn(/)</button>
+	<h4 id="Resulta" style="color:red"></h4>
+	
+	<script>
+        function Addition(){
+            var x1=document.getElementById("Result").value;
+			var x2=document.getElementById("Resultt").value;
+            var Additionn = parseInt(x1)+parseInt(x2);
+            document.getElementById("Resulta").innerHTML = ("Cộng: " + Additionn);
+        }
+
+        function Subtraction(){
+            var x1=document.getElementById("Result").value;
+			var x2=document.getElementById("Resultt").value;
+            var Subtractionn = parseInt(x1)-parseInt(x2);
+            document.getElementById("Resulta").innerHTML = ("Trừ: " + Subtractionn);
+        }
+        function Multiplication(){
+            var x1=document.getElementById("Result").value;
+			var x2=document.getElementById("Resultt").value;
+            var Multiplicationn = parseInt(x1)*parseInt(x2);
+            document.getElementById("Resulta").innerHTML = ("Nhân: " + Multiplicationn);
+        }
+        function DivisiOn(){
+            var x1=document.getElementById("Result").value;
+			var x2=document.getElementById("Resultt").value;
+            var DivisiOnn = parseInt(x1)/parseInt(x2);
+            document.getElementById("Resulta").innerHTML = ("Chia: " + DivisiOnn);
+        }
+    </script>
+		
+ 		
+	</script>
+</body>
+</html>
+
