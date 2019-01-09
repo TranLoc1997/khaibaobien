@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy Tính</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<form method="post">
+	<table border="5" cellpadding="5">
+	    <tbody>
+		 	<tr>
+		 		<th bgcolor="#C0C0C0"><input id="Result" size="28" maxlength="28" type="text"/></th>
+		 	</tr>
+			<tr>
+			 	<td>
+					<table align="center">
+					    <tbody>
+						  	<tr>
+							   
+							   <td width="18%"><input class="btn" type="button" value="7" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn" type="button" value="8" onclick="Result.value+=this.value"/"></td>
+							   <td width="23%"><input class="btn" type="button" value="9" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn" type="button" value="+" onclick="Result.value+=this.value"/></td>	
+							</tr>
+							<tr>
+							   <td width="18%"><input class="btn" type="button" value="4" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn" type="button" value="5" onclick="Result.value+=this.value"/"></td>
+							   <td width="23%"><input class="btn" type="button" value="6" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn" type="button" value="-" onclick="Result.value+=this.value"/></td>
+							   
+						  	</tr>
+						 	<tr>
+							   
+							   <td width="18%"><input class="btn"  type="button" value="1" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn"  type="button" value="2" onclick="Result.value+=this.value"/></td>
+							   <td width="23%"><input class="btn"  type="button" value="3" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn"  type="button" value="*" onclick="Result.value+=this.value"/></td>
+							   
+						 	</tr>
+						  	<tr>
+							   
+							   <td width="18%"><input class="btn"  type="button" value="0" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn"  type="button" value="." onclick="Result.value+=this.value"/></td>
+							   <td width="23%"><input class="btn"  type="button" value="C" onclick="Result.value=''"/></td>
+							   <td width="18%"><input class="btn"  id="edu" type="button" value="/" onclick="Result.value+=this.value"/></td>
+							   
+						 	</tr>
+						  	<tr>
+							    <td width="18%"><input class="btn" type="button" value="<-" onclick="Result.value=Result.value.substr(0,Result.value.length-1)"/></td>
+							   <td width="18%"><input class="btn" type="button" value="(" onclick="Result.value+=this.value"/></td>
+							   <td width="23%"><input class="btn" type="button" value=")" onclick="Result.value+=this.value"/></td>
+							   <td width="18%"><input class="btn" type="button" value="=" onclick="Result.value=eval(Result.value)"/></td>
+						  	</tr>
+					  	</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>
